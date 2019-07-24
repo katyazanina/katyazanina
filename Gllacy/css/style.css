@@ -1471,6 +1471,8 @@ fieldset{
 .modal-enter input[type="email"],
 .modal-enter input[type="password"]{
 	width: 100%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	height: 45px;
 	margin-bottom: 20px;
 }
