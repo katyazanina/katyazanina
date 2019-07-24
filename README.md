@@ -1,2 +1,2 @@
-# katyazanina
+# katyazanina.github.io
 Portfolio
