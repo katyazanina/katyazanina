@@ -1,0 +1,462 @@
+.filtr__desc{
+	padding: 0;
+	margin: 0;
+
+	font-size: 13px;
+	line-height: 24px;
+
+	padding-top: 30px;
+	padding-bottom: 25px;
+
+}
+
+
+legend {
+  display: block; 
+  padding: 0;
+  margin: 0;
+  white-space: normal;
+}
+
+
+.filtr__legend{
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #63d1bb;
+
+	
+	padding-bottom: 32px;
+
+	position: relative;
+
+}
+@media (max-width: 727px){
+
+		.filtr__legend::after{
+		content: "";
+		position: absolute;
+		background-color: #62d1ba;
+		width: 200px;
+		height: 1px;
+		top: 7px;
+		left: 60px;
+	}
+}
+.filtr__wrapper--type{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.filtr__label{
+	position: relative;
+
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	padding-bottom: 23px;
+	padding-left: 65px;
+}
+.filtr__label:nth-child(2){
+	padding-bottom: 40px;
+}
+.filtr__radio-icon{
+	
+	position: absolute;
+	border-radius: 50%;
+	border: 2px solid #444444;
+	width: 40px;
+	height: 40px;
+	top: -10px;
+	left: 0px;
+	cursor: pointer;
+	
+}
+.filtr__radio:checked + .filtr__radio-icon::after{
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	background-color: #62d1ba;
+	width: 16px;
+	height: 16px;
+	top: 12px;
+	left: 12px;
+}
+.filtr__radio:hover +  .filtr__radio-icon{
+	border: 2px solid #62d1ba;
+}
+.filtr__radio:focus +  .filtr__radio-icon{
+	border: 2px solid #62d1ba;
+}
+.filtr__radio:active +  .filtr__radio-icon{
+	border: 2px solid rgba(68, 68, 68, 0.3);
+}
+.filtr__wrapper--color{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.filtr__checkbox-icon{
+	position: absolute;
+
+	width: 35px;
+	height: 35px;
+
+	border: 2px solid #444444;
+
+	cursor: pointer;
+
+	top: -10px;
+	left: 0px;
+}
+.filtr__label--color{
+	padding-bottom: 40px;
+}
+.filtr__check:checked + .filtr__checkbox-icon::before{
+	content: "";
+	position: absolute;
+
+	width: 22px;
+	height: 16px;
+	background-image: url(../img/catalog/tick-mobile.svg);
+	background-repeat: no-repeat;
+	top: 25%;
+	left: 25%;
+}
+.filtr__check:hover + .filtr__checkbox-icon{
+	border: 2px solid #62d1ba;
+}
+.filtr__check:focus + .filtr__checkbox-icon{
+	border: 2px solid #62d1ba;
+}
+.filtr__check:active + .filtr__checkbox-icon{
+	border: 2px solid rgba(68, 68, 68, 0.3);
+}
+.filtr__text{
+	padding: 0;
+  	border: none;
+  	font: inherit;
+  	background-color: transparent;
+
+
+  	border-bottom: 2px solid #000000;
+  	margin-top: 15px;
+  	padding-bottom: 15px;
+  	
+
+  	width: 100%;
+  	box-sizing: border-box;
+
+  	font-size: 18px;
+  	line-height: 19px;
+  	font-weight: normal;
+}
+::-webkit-input-placeholder {
+   color: rgba(68, 68, 68, 0.3);
+   font-weight: normal;
+   font-size: 17px;
+   line-height: 18px;
+
+}
+.filtr__text:hover{
+	border-bottom: 2px solid #62d1ba;
+}
+.filtr__text:focus{
+	border-bottom: 2px solid #62d1ba;
+}
+.filtr__text--extra:hover{
+	border: 2px solid #62d1ba;
+}
+.filtr__text--extra:focus{
+	border: 2px solid #62d1ba;
+}
+
+.filtr__wrapper--name{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: stretch;
+	    -ms-flex-pack: stretch;
+	        justify-content: stretch;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+}
+.filtr__label--name{
+	padding-left: 0px;
+}
+
+.filtr__text--tel,
+.filtr__text--email{
+	margin-bottom: 20px;
+		/*padding-right: 60px;*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+}
+.filtr__wrapper--tel,
+.filtr__wrapper--email{
+	position: relative;
+}
+.filtr__icon-tel,
+.filtr__icon-email{
+	position: absolute;
+	opacity: 0.2;
+	top: 30px;
+	left: 85%;
+}
+.filtr__text--tel:hover + .filtr__icon-tel,
+.filtr__text--email:hover + .filtr__icon-email{
+	fill: #62d1ba;
+	opacity: 1;
+}
+
+.filtr__legend--tel{
+	padding-bottom: 0px;
+}
+.filtr__legend--email{
+	padding-bottom: 0px;
+}
+.filtr__legend--extra{
+	padding-bottom: 0px;
+}
+.filtr__text--extra{
+	border: 2px solid #000000;
+}
+.filtr__text--extra{
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 40px;
+	padding-bottom: 85px;
+}
+.filtr__signature{
+	font-size: 14px;
+	line-height: 16px;
+}
+.filtr__button{
+	padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+	background-color: transparent;
+  cursor: pointer;
+	
+
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 55px;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+@media (min-width: 728px){
+	.filtr__desc{
+		font-size: 17px;
+		line-height: 30px;
+
+		padding-top: 80px;
+		padding-bottom: 0px;
+	}
+	.filtr__wrapper{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.filtr__wrapper{
+		padding-top: 80px;
+		/*padding-bottom: ;*/
+		
+	}
+	.filtr__wrapper--type,
+	.filtr__wrapper--color,
+	.filtr__wrapper--name{
+		margin-left: 125px;
+	}
+
+
+	.filtr__wrapper-grey{
+		background-color: #f1f1f1;
+	}
+	.filtr__label{
+		font-size: 19px;
+		padding-bottom: 53px;
+		padding-left: 80px;
+	}
+	.filtr__label br{
+		display: none;
+	}
+	.filtr__radio-icon{
+		width: 50px;
+		height: 50px;
+		top: -20px;
+	}
+	.filtr__radio:checked + .filtr__radio-icon::after{
+		width: 20px;
+		height: 20px;
+		top: 15px;
+		left: 15px;
+	}
+
+
+
+	.filtr__wrapper--color{
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		/*ustify-content: space-between;*/
+	}
+	.filtr__checkbox-icon{
+		width: 50px;
+		height: 50px;
+		top: -15px;
+	}
+	.filtr__check:checked + .filtr__checkbox-icon::before{
+		
+		width: 33px;
+		height: 22px;
+		background-image: url(../img/catalog/tick-tablet.svg);
+	}
+	
+	
+	
+	.filtr__label--name{
+		padding-left: 0px;
+		
+	
+	}
+	.filtr__label{
+		display: flex;
+	}
+	
+	.filtr__text{
+		margin-left: 25px;
+		margin-top: 0;
+	}
+	.filtr__text--name{
+		/*width: 100%;*/
+		/*padding-right: 220px;*/
+	}
+	.filtr__text--surname,
+	.filtr__text--fathername{
+		/*adding-right: 170px;*/
+	}
+	.filtr__text--tel{
+		margin-top: -5px;
+		margin-left: 140px;
+		width: 100%;
+	}
+	.filtr__text--email{
+		margin-top: -5px;
+		margin-left: 125px;
+		width: 100%;
+	}
+	.filtr__wrapper--email{
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+	.filtr__icon-tel,
+	.filtr__icon-email{
+
+		left: 95%;
+	}
+	.filtr__icon-tel{
+		top: 80px;
+	}
+	.filtr__text--extra{
+		margin-top: 0;
+		margin-left: 130px;
+		width: 100%;
+	}
+	.filtr__wrapper--button{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+
+	}
+	.filtr__signature{
+		font-size: 17px;
+		line-height: 30px;
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
+	}
+	.filtr__button{
+		margin: 0;
+		-webkit-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
+	}
+	.filtr__wrapper--button{
+		padding-top: 56px;
+		padding-bottom: 50px;
+	}
+
+}
+
+@media (max-width: 1200px){
+	.filtr__label--color:nth-child(odd){
+			width: 116px;
+			/*box-sizing: border-box;*/
+			padding-right: 59px;
+		}
+}
+
+@media (min-width: 1200px){
+	.filtr__desc{
+		padding-right: 175px;
+		padding-left: 175px;
+	}
+	.filtr__wrapper{
+		padding-left: 65px;
+	}
+	.filtr__wrapper--type{
+		margin-left: 75px;
+	}
+	.filtr__wrapper--color{
+		margin-left: 75px;
+	}
+	.filtr__label--color{
+		width: 200px;
+	}
+	
+	.filtr__text--name{
+		padding-right: 430px;
+	}
+	.filtr__text--surname,
+	.filtr__text--fathername{
+		padding-right: 380px;
+	}
+	.filtr__wrapper--tel,
+	.filtr__wrapper--email{
+		margin-right: 113px;
+	}
+	.filtr__wrapper--extra{
+		margin-right: 113px;
+	}
+	.filtr__wrapper--button{
+		margin-left: 235px;
+		margin-right: 125px;
+	}
+}
