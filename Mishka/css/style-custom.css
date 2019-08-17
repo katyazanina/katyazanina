@@ -11,15 +11,12 @@
 }
 
 
-legend {
-  display: block; 
-  padding: 0;
-  margin: 0;
-  white-space: normal;
-}
+
 
 
 .filtr__legend{
+	margin: 0;
+	padding: 0;
 	font-size: 17px;
 	font-weight: bold;
 	line-height: 16px;

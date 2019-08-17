@@ -446,6 +446,12 @@ input[type="checkbox"]{
 	line-height: 20px;
 	font-weight: bold;
 }
+.advantages__column__list{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+}
+
 [class^="advantages__item--"]{
 	padding-top: 55px;
 	padding-bottom: 30px;
@@ -494,7 +500,11 @@ input[type="checkbox"]{
 	padding-top: 30px;
 
 }
-
+.review__list{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+}
 .reviews__title{
 	padding: 0;
 	margin: 0;
@@ -511,6 +521,7 @@ input[type="checkbox"]{
 	line-height: 30px;
 
 	padding-bottom: 65px;
+	min-height: 270px;
 }
 .reviews__author{
 	font-size: 17px;
@@ -557,6 +568,19 @@ input[type="checkbox"]{
 		fill: rgba(0, 0, 0, 0.3)
 }
 
+	/*.slider{
+     position:relative
+	}*/
+	.slider__item{
+    width:100%;
+    display:none
+	}
+	.slider__item--shown{
+    display:block
+	}
+	.slider__btn--disabled{
+    cursor:not-allowed
+}
 /*Контакты*/
 .contacs__title{
 	margin: 0;
@@ -1094,9 +1118,12 @@ input[type="checkbox"]{
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+
 	}
+
 	.advantages__column{
 		width: 335px;
+
 	}
 	[class^="advantages__item--"]{
 		padding-top: 55px;
@@ -1118,6 +1145,7 @@ input[type="checkbox"]{
 	 	        align-items: flex-start;
 
 		padding: 0;
+		position: relative;
 	}
  	.reviews__bg{
 	 	background-image: url(../img/review.jpg);  
@@ -1143,17 +1171,22 @@ input[type="checkbox"]{
 	 	padding-right: 40px;
 	 	margin-top: 80px;
 	}
-	.reviews__text{
-	 	-webkit-box-ordinal-group: 4;
+	.review__list{
+		-webkit-box-ordinal-group: 4;
 	 	    -ms-flex-order: 3;
 	 	        order: 3;
+	 	  	display: -webkit-box;
+	 	display: -ms-flexbox;
+
+	}
+	.reviews__text{
+	
 	 	font-size: 17px;
 	 	line-height: 30px;
+	 	min-height: 125px;
 	}
  	.reviews__author{
-	 	-webkit-box-ordinal-group: 5;
-	 	    -ms-flex-order: 4;
-	 	        order: 4;
+
 	 	display: -webkit-box;
 	 	display: -ms-flexbox;
 	 	display: flex;
@@ -1163,17 +1196,22 @@ input[type="checkbox"]{
 	 	        flex-direction: column;
    }
  	.reviews__buttons{
-	 	-webkit-box-ordinal-group: 6;
-	 	    -ms-flex-order: 5;
-	 	        order: 5;
+		 	-webkit-box-ordinal-group: 5;
+	 	    -ms-flex-order: 4;
+	 	        order: 4;
 	 	margin: 0px;
 	 	border: none;
+	 	position: absolute;
+	 	top: 85%;
+	 	left: 75%;
+
 	}
  	.reviews__button{
 	 	border: none;
 	 	padding-left: 10px; 
 	 	padding-right: 25px;
 	}
+
  	/*Контакты*/
 	.contacs__title{
 		padding-top: 65px;
@@ -1509,12 +1547,13 @@ input[type="checkbox"]{
 		padding-top: 55px;
 		padding-bottom: 60px;
 	   }
-
+	
 	.reviews__title{
 		font-size: 53px;
 		line-height: 57px;
 		padding-left: 125px;
 	}
+	
 	.reviews__bg{
 		margin-left: auto;
 		margin-right: auto;
@@ -1531,6 +1570,7 @@ input[type="checkbox"]{
 	.reviews__text{
 		margin-right: 90px;
 		padding-left: 125px;
+		min-height: 125px;
 
 		
 	}
@@ -1539,6 +1579,17 @@ input[type="checkbox"]{
 		
 		padding-bottom: 100px;
 	}
+	.reviews__button--write{
+		margin-right: 85px;
+	}
+	.reviews__buttons{
+
+	 	top: 70%;
+	 	left: 76%;
+
+	}
+
+
 	/*Контакты*/
 	.contacs__title{
 		padding-top: 150px;
