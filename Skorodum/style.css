@@ -11,17 +11,19 @@ body{
 	font-family: 'Lato Regular';
 	padding: 0;
 	margin: 0;
-	
+	min-width: 320px;
+
 
 }
 .header__wrapper{
 	background-color: #f2f1f5;
+	width: 100vw;
 }
 
 
 .container{
 	margin: 0 auto;
-	width: 1140px;
+	max-width: 1140px;
 	padding-left: 30px;
 	padding-right: 30px;
 }
