@@ -7,7 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript">
+    </script>
 	
 	<script>
     // Picture element HTML5 shiv
@@ -207,8 +208,9 @@
 							</tr>
 						</table>
 					 </div>
-					<div class="contacs__map"> 
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1564753545840!5m2!1sru!2sua" width="322" height="457" frameborder="0" allowfullscreen></iframe> 
+					<div class="contacs__map" id="map"> 
+
+						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1564753545840!5m2!1sru!2sua" width="322" height="457" frameborder="0" allowfullscreen></iframe>  -->
 							<!-- <img class="contacs__map" src="img/map.jpg" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"> -->
 					</div>
 
@@ -282,7 +284,45 @@
 
 	<div class="overlay"></div>
 	<script src="js/skcript-index.js"></script>
+	<script>
+		
+			ymaps.ready(function () {
+	    var myMap = new ymaps.Map('map', {
+	            center: [59.938631, 30.323055],
+	            zoom: 15
 
+	        }, {
+	            searchControlProvider: 'yandex#search'
+
+	        }),
+
+	        // Создаём макет содержимого.
+	        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+	            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+	        ),
+
+	        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+	            hintContent: 'Mishka shop',
+	            balloonContent: 'Mishka shop'
+	        }, {
+	            // Опции.
+	            // Необходимо указать данный тип макета.
+	            iconLayout: 'default#image',
+	            // Своё изображение иконки метки.
+	            iconImageHref: 'img/map-pin.png',
+	            // Размеры метки.
+	            iconImageSize: [67, 100],
+	            // Смещение левого верхнего угла иконки относительно
+	            // её "ножки" (точки привязки).
+	            iconImageOffset: [-30, -100]
+	        });
+	        myMap.behaviors.disable('scrollZoom'); 
+
+	    myMap.geoObjects
+	        .add(myPlacemark);
+	});
+
+</script>
 
 
 
