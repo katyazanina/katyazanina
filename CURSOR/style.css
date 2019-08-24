@@ -590,6 +590,7 @@ img {
 		width: 23px;
 		height: 23px;
 		top: -40%;
+		left: 100%;
 
 	}
 	.main__title{
@@ -656,6 +657,14 @@ img {
 	.main__link{
 		font-size: 8px;
 		
+	}
+	.main__link::after{
+		width: 23px;
+		height: 23px;
+		top: -40%;
+		left: 100%;
+
+
 	}
 
 	.main__title{
