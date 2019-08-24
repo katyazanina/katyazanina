@@ -259,6 +259,7 @@ img {
 	content: "";
 	position: absolute;
 	background-image: url("./img/youtube-link.svg");
+	background-repeat: no-repeat;
 	background-size: contain;
 	width: 46px;
 	height: 46px;
@@ -293,7 +294,8 @@ img {
 }
 .main__btn{
 	display: inline-block;
-	padding: 25px 7%;
+	padding: 25px 15%;
+	margin-top: 80px;
 
 	margin-bottom: 115px;
 
@@ -311,9 +313,7 @@ img {
 
 
 }
-.main__btn svg{
-	padding-left: 2%;
-}
+
 .main__reviews{
 	width: 41%;
 	object-fit: cover;
@@ -609,6 +609,7 @@ img {
 		 padding-top: 10px;
 		 padding-bottom: 10px;
 		 margin-bottom: 50px;
+		 margin-top: 10px;
 	}
 
 	.main__btn svg{
@@ -616,10 +617,10 @@ img {
 		height: 12px;
 	}
 	.social__list{
-		margin-top: 70px;
+		margin-top: 100px;
 	}
 	.photo__btn--up {
-    	margin-top: 25px;
+    	margin-top: 65px;
     	margin-bottom: 25px;
 
  	}
