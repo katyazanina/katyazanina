@@ -568,9 +568,6 @@ img {
 }
 @media (max-width: 768px){
 
-	.header__logo-wrapper{
-		height: 83px;
-	}
 	.nav__list{
 		flex-direction: row;
 		flex-wrap: wrap;
