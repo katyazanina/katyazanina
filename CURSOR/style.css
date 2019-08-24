@@ -178,7 +178,7 @@ img {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 
 }
@@ -227,8 +227,8 @@ img {
 	
 	display: flex;
 	justify-content: space-between;
-}
 
+}
 .about{
 	width: 41%;
 	padding-left: 4%;
@@ -246,11 +246,31 @@ img {
 	display: flex;
 	align-items: center;
 	margin-top: 130px;
+	position: relative;
 }
-.main__link span{
-	padding-right: 20px;
+.main__link{
+	display: inline-block;
+
+	padding-right: 15%;
 	
 }
+
+.main__link::after{
+	content: "";
+	position: absolute;
+	background-image: url(img/youtube-link.svg);
+	background-size: contain;
+	width: 46px;
+	height: 46px;
+	top: -90%;
+	left: 80%;
+
+}
+/*.main__link-icon{
+	position: absolute;
+	right: 0;
+	top: -15px;
+}*/
 .main__title{
 	font-family: 'FuturaDemiC';
 	font-size: 145px;
@@ -529,6 +549,7 @@ img {
 	padding-top: 80px;
 	text-align: center;
 
+
 	
 }
 
@@ -536,8 +557,24 @@ img {
 	filter:  grayscale(100%) ;
 	opacity: 0.5;
 }
-
+@media (max-width: 1200px){
+	.nav__list{
+		flex-direction: column;
+	}
+	.advantages__item{
+		border: none;
+		margin-bottom: 30px;
+	}
+}
 @media (max-width: 768px){
+
+	.header__logo-wrapper{
+		height: 83px;
+	}
+	.nav__list{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 	.nav__link{
 		font-size: 10px;
 		line-height: 10px;
@@ -550,15 +587,12 @@ img {
 	}
 	.main__link{
 		margin-top: 30px;
-		font-size: 10px;
 		
 	}
-
-	.main__link span{
-		padding-right: 5px;
-	}
-	.main__link svg{
-		transform: scale(0.5);
+	.main__link::after{
+		width: 23px;
+		height: 23px;
+		top: -40%;
 
 	}
 	.main__title{
@@ -567,6 +601,7 @@ img {
 	}
 	.main__desc{
 		font-size: 25px;
+		line-height: 28px;
 	}
 	.main__btn{
 		font-size: 10px;
@@ -583,10 +618,12 @@ img {
 		height: 12px;
 	}
 	.social__list{
-		margin-top: 100px;
+		margin-top: 70px;
 	}
 	.photo__btn--up {
-    	margin-top: 35px;
+    	margin-top: 25px;
+    	margin-bottom: 25px;
+
  	}
  	.advantages__item b{ 
 		font-size: 16px;
@@ -598,13 +635,32 @@ img {
  		font-size: 10px;
  
  	}
+ 	.partners__title{
+ 		padding-top: 60px;
+ 	}
+ 	.partners__list{
+ 		padding-top: 60px;
+ 		padding-bottom: 60px;
+ 	}
+ 	.partners__item{
+ 		padding-top: 20px;
+ 	}
  	
 }
 @media (max-width: 425px){
-	.main__link span{
+
+	.nav__link{
+		font-size: 8px;
+		line-height: 10px;
+	}
+	.main__link{
+		margin-top: 15px;
+	}
+	.main__link{
 		font-size: 8px;
 		
 	}
+
 	.main__title{
 		font-size: 45px;
 		line-height: 45px;
@@ -616,7 +672,12 @@ img {
 	.main__btn{
 		margin-bottom: 15px;
 	}
-
+	.photo__item{
+		margin-bottom: 16px;
+	}
+	.social__item{
+		margin-bottom: 25px;
+	}
 
 
 }
