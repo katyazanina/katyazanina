@@ -258,7 +258,7 @@ img {
 .main__link::after{
 	content: "";
 	position: absolute;
-	background-image: url("../img/youtube-link.svg");
+	background-image: url("./img/youtube-link.svg");
 	background-size: contain;
 	width: 46px;
 	height: 46px;
