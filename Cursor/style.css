@@ -212,7 +212,7 @@ img {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	
+/*	align-items: flex-start;*/
 	width: 35%;
 	margin-right: 5%;
 	justify-content: space-between;
@@ -733,7 +733,12 @@ img {
 		font-size: 10px;
 		line-height: 10px;
 	}
+	.contact__list{
+		flex-direction: column;
+		
+	}
 	.contact__item{
+		align-self: flex-end;
 		font-size: 10px;
 	}
 	.header__lang-change{
@@ -783,7 +788,7 @@ img {
  	}
 
  	.photo__item:first-child{
-		margin-top: 75px;
+		margin-top: 95px;
 	}
 	.photo__btn--down{
 		margin-top: 25px;
@@ -859,8 +864,6 @@ img {
 		height: 23px;
 		top: -40%;
 		left: 100%;
-
-
 	}
 
 	.main__title{
@@ -876,6 +879,9 @@ img {
 	}
 	.photo__item:not(:last-child){
 		margin-bottom: 16px;
+	}
+	.photo__item:first-child{
+		margin-top: 75px;
 	}
 	.social__list{
 		margin-top: 80px;
