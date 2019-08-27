@@ -184,7 +184,7 @@ img {
 
 	-webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-  animation-duration: 3s;
+  animation-duration: 1s;
 
   
 }
@@ -218,7 +218,7 @@ img {
 	justify-content: space-between;
 	-webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-  animation-duration: 3s;
+  animation-duration: 1s;
 
 }
 .contact__item{
@@ -262,7 +262,7 @@ img {
 	position: relative;
 	-webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-delay: 1s;
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
@@ -290,7 +290,7 @@ img {
 	animation-name: link;
 	animation-duration: 2000ms;
 	animation-timing-function: linear;
-	animation-delay: 4s;
+	animation-delay: 2s;
 }
 
 .main__link:hover::after{
@@ -334,7 +334,7 @@ img {
 	color: #141414;
 	-webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-delay: 1s;
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
@@ -537,13 +537,13 @@ img {
 	padding-left: 75px;
 	-webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-  animation-duration: 3s;
+  animation-duration: 1s;
 
 }
 .advantages__item--5{
 	padding-right: 6%;
 	border-right: 1px solid #E9E9E9;
-	animation-delay: 2s;
+	animation-delay: 1s;
 	opacity: 0;
 	-webkit-animation-fill-mode: forwards;
 	-o-animation-fill-mode: forwards;
@@ -554,7 +554,7 @@ img {
 	padding-right: 6%;
 	
 	border-right: 1px solid #E9E9E9;
-	animation-delay: 1s;
+	animation-delay: 0.5s;
 	opacity: 0;
 	-webkit-animation-fill-mode: forwards;
 	-o-animation-fill-mode: forwards;
@@ -677,12 +677,12 @@ img {
 .partners__item:nth-child(-n+4){
 	-webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 .partners__item:nth-child(n+5){
 	-webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 .partners__slider{
 	display: none;
