@@ -430,6 +430,7 @@ let page = document.querySelector('.body');
 
 // console.log(page);
 document.onreadystatechange = function () {
+	move();
 // check the value - if it's 'complete' then everything has loaded
 	if (document.readyState === "complete") {
 		window.setTimeout(function () {
@@ -626,7 +627,7 @@ document.onreadystatechange = function () {
 			searchProjectAnimatedAndRemove()
 
 
-		 }, 3000);
+		 }, 3200);
 		 	
 		 }
 	
