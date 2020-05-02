@@ -415,7 +415,7 @@ function move() {
 }
 // document.onreadystatechange = function () {
 // 	if(document.readyState === "loading"){
-		move();
+		// move();
 // 	}
 // }
 
@@ -427,7 +427,7 @@ let page = document.querySelector('.body');
 
 // console.log(page);
 document.onreadystatechange = function () {
-	// move();
+	move();
 // check the value - if it's 'complete' then everything has loaded
 	if (document.readyState === "complete") {
 		window.setTimeout(function () {
