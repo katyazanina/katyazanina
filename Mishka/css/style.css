@@ -768,7 +768,7 @@ input[type="checkbox"]{
 	height: 50px;
 	display: block;
 	text-align: center;
-	vertical-align: middle;
+	/* vertical-align: middle */
 	padding-top: 15px;
 	border: 2px solid rgba(68, 68, 68, 0.1);
 	-webkit-box-sizing: border-box;
