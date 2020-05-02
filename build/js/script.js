@@ -398,20 +398,17 @@ function move() {
 	function frame() {
 		if (width == 100) {
 			clearInterval(id);
-			//  (document.readyState === "loading"){
-				// preloaderLogo.classList.add('show__logo');
-				// width++;
-				// preloaderLogo.style.width = width + '%';
-			// }
+			
 			
 			preloaderLogo1.classList.add('show__logo1');
 			preloaderContainer.classList.add('move__logo');
 		} else {
 			width++; 
 			elem.style.width = width + '%'; 
-			// if(document.readyState === "loading"){
-				preloaderLogo.style.width = width + '%';
-			// }
+		
+				// preloaderLogo.style.width = width + '%';
+				preloaderLogo.classList.add('preloader__wrap-forcustomer');
+		
 		
 		}
 	}
@@ -430,7 +427,7 @@ let page = document.querySelector('.body');
 
 // console.log(page);
 document.onreadystatechange = function () {
-	move();
+	// move();
 // check the value - if it's 'complete' then everything has loaded
 	if (document.readyState === "complete") {
 		window.setTimeout(function () {
@@ -627,7 +624,7 @@ document.onreadystatechange = function () {
 			searchProjectAnimatedAndRemove()
 
 
-		 }, 3200);
+		 }, 3000);
 		 	
 		 }
 	
