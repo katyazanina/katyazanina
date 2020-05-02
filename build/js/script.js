@@ -632,19 +632,19 @@ document.onreadystatechange = function () {
 
 	}
 
-	document.addEventListener('DOMContentLoaded', function(){
-		if (window.screen.width <= 1024 ){
-			let mobileLogo = document.querySelector('.main__logo--focus');
+	// document.addEventListener('DOMContentLoaded', function(){
+	// 	if (window.screen.width <= 1024 ){
+	// 		let mobileLogo = document.querySelector('.main__logo--focus');
 
-			let logoTopCoord = getCoords(mobileLogo).top;
+	// 		let logoTopCoord = getCoords(mobileLogo).top;
 
-			// console.log(logoTopCoord);
+	// 		// console.log(logoTopCoord);
 
-			let logoMobilePreloader = document.querySelector('.main__logo--preloader');
-			logoMobilePreloader.style.top = logoTopCoord + 'px';
-			logoMobilePreloader.style.transform = 'translate(-48%, 0%)';
-		}
-	})
+	// 		let logoMobilePreloader = document.querySelector('.main__logo--preloader');
+	// 		logoMobilePreloader.style.top = logoTopCoord + 'px';
+	// 		logoMobilePreloader.style.transform = 'translate(-48%, 0%)';
+	// 	}
+	// })
 	
 
 	let contactBtn  = document.querySelector('.contact__btn');
