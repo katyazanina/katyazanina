@@ -428,7 +428,6 @@ let preloader = document.querySelector('.preloader')
 // preloader.style.display = 'none';
 let page = document.querySelector('.body');
 
-let mainPage = document.querySelector('main');
 // console.log(page);
 document.onreadystatechange = function () {
 // check the value - if it's 'complete' then everything has loaded
