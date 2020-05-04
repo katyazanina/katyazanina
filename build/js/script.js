@@ -624,7 +624,7 @@ document.onreadystatechange = function () {
 			searchProjectAnimatedAndRemove()
 
 
-		 }, 3000);
+		 }, 3400);
 		 	
 		 }
 	
