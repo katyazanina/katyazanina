@@ -627,6 +627,63 @@ document.onreadystatechange = function () {
 			searchProjectAnimatedAndRemove()
 
 
+			let navItemAnimation = document.querySelectorAll('.navigation__item--animation');
+
+			window.addEventListener('scroll', function() {
+				if(pageFlag){
+					for(let i = 0; i< navItemAnimation.length; i++){
+						visible (navItemAnimation[i], 'navigation__item__in-animation');	
+					}
+					
+				}
+				
+			});
+			// А также запустим функцию сразу. А то вдруг, элемент изначально видно
+				
+			for(let i = 0; i< navItemAnimation.length; i++){
+				if(pageFlag){
+					visible (navItemAnimation[i], 'navigation__item__in-animation');	
+				}
+			}
+
+			document.addEventListener("DOMContentLoaded", function() {
+				if(pageFlag){
+					for(let i = 0; i< navItemAnimation.length; i++){
+						visible (navItemAnimation[i], 'navigation__item__in-animation');	
+					}
+				}
+			});
+
+
+			
+			let navItemContactAnimation = document.querySelector('.navigation__item--contact');
+
+			window.addEventListener('scroll', function() {
+				if(pageFlag){
+					// for(let i = 0; i< navItemAnimation.length; i++){
+						visible (navItemContactAnimation, 'navigation__item--contact-animation');	
+					// }
+					
+				}
+				
+			});
+			// А также запустим функцию сразу. А то вдруг, элемент изначально видно
+				
+			// for(let i = 0; i< navItemAnimation.length; i++){
+				if(pageFlag){
+					visible (navItemContactAnimation, 'navigation__item--contact-animation');	
+				}
+			// }
+
+			document.addEventListener("DOMContentLoaded", function() {
+				if(pageFlag){
+					// for(let i = 0; i< navItemAnimation.length; i++){
+						visible (navItemContactAnimation, 'navigation__item--contact-animation');	
+					// }
+				}
+			});
+
+
 		 }, 2000);
 		 	
 		 }
