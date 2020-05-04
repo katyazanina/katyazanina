@@ -407,7 +407,7 @@ function move() {
 			elem.style.width = width + '%'; 
 		
 				// preloaderLogo.style.width = width + '%';
-				preloaderLogo.classList.add('preloader__wrap-forcustomer');
+				// preloaderLogo.classList.add('preloader__wrap-forcustomer');
 		
 		
 		}
@@ -427,9 +427,12 @@ let page = document.querySelector('.body');
 
 // console.log(page);
 document.onreadystatechange = function () {
-	move();
+
+	preloaderLogo.classList.add('preloader__wrap-forcustomer');
+	// move();
 // check the value - if it's 'complete' then everything has loaded
 	if (document.readyState === "complete") {
+		move();
 		window.setTimeout(function () {
 			// page.style.display = "block";
 			page.classList.add('page-scroll');
@@ -624,7 +627,7 @@ document.onreadystatechange = function () {
 			searchProjectAnimatedAndRemove()
 
 
-		 }, 3400);
+		 }, 2000);
 		 	
 		 }
 	
