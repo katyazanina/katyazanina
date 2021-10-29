@@ -1,0 +1,12 @@
+
+:root {
+	--main-font: 'Noah', sans-serif;
+	--title-font :'Noah Grotesque', sans-serif; 
+	--main-text-color: #000000;
+
+	--main-back-color: #FFFDFD;
+	--two-back-color: #C1C0A3;
+
+	--quotes-color-icon: url(../img/quote2.svg);
+}
+
